@@ -23,7 +23,7 @@ public class ExcelLib {
     * @return
     * @throws Throwable
     */
-	public String getExcelData(String shettName , int rowNum , int colNum) throws Throwable {
+	public String getExcelData(String filePath ,String shettName , int rowNum , int colNum) throws Throwable {
 		FileInputStream fis = new FileInputStream(filePAth);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(shettName);

@@ -20,8 +20,8 @@ public class CreateContacWithOrgNameTest extends BaseClass{
 	@Test
 	public void createContactWithOrgtest() throws Throwable {	
 		/* read test script specific data*/
-		String orgName = excelLib.getExcelData("contact", 1, 2)+ "_"+ wLib.getRamDomNum();
-		String contactName = excelLib.getExcelData("contact", 1, 5);
+		String orgName = excelLib.getExcelData("./testData/testScriptData.xlsx", "contact", 1, 2)+ "_"+ wLib.getRamDomNum();
+		String contactName = excelLib.getExcelData("./testData/testScriptData.xlsx", "contact", 1, 5);
 
 		/*step 3 : navigate to Org page*/
         Home hp = new Home(driver);
