@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.autodeskcrm.gerericutils.WebDriverUtils;
 /**
  * 
- * @author Deepak
+ * @author Deepak 
  *
  */
 public class Home extends WebDriverUtils{                      //Rule 1
@@ -29,6 +29,9 @@ public class Home extends WebDriverUtils{                      //Rule 1
 	
 	@FindBy(linkText="Campaigns")
 	private WebElement campaignLink;
+	
+	@FindBy(linkText="Quotes")
+	private WebElement quotelnk;
 
    
 	@FindBy(linkText="More")
@@ -77,6 +80,14 @@ public class Home extends WebDriverUtils{                      //Rule 1
     	moveMouseToElemnet(driver, moreLink);
     	waitForElemnetVsibility(driver, campaignLink);
     	campaignLink.click();
+    }
+    /**
+     * navigate to QuotePage
+     */
+    public void navigateToQuotePage() {
+    	moveMouseToElemnet(driver, moreLink);
+    	waitForElemnetVsibility(driver, quotelnk);
+    	quotelnk.click();
     }
 
 }
