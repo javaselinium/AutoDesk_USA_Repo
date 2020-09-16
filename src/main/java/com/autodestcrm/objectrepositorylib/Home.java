@@ -19,6 +19,9 @@ public class Home extends WebDriverUtils{                      //Rule 1
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(linkText="Products")                                 //Rule 2
+	private WebElement products;
+	
 	@FindBy(linkText="Contacts")                                 //Rule 2
 	private WebElement conatctLink;
 	
