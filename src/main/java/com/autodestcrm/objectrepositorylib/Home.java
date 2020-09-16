@@ -14,13 +14,20 @@ import com.autodeskcrm.gerericutils.WebDriverUtils;
 public class Home extends WebDriverUtils{                      //Rule 1
 	WebDriver driver;
 	
+	
+	
 	public Home(WebDriver driver) {                             //Rule 5
 	    this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+
 	@FindBy(linkText="Products")                                 //Rule 2
 	private WebElement products;
+
+	@FindBy(linkText="Opportunities")                                 //Rule 2
+	private WebElement OpportunitiesLnk;
+
 	
 	@FindBy(linkText="Contacts")                                 //Rule 2
 	private WebElement conatctLink;
