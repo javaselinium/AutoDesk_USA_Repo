@@ -4,7 +4,7 @@
   
   <test name="Test">
     <classes>
-      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest"/>
+      <class name="com.autodeskcrm.orgtest.ChromeTest"/>
 
     </classes>
   </test> <!-- Test -->

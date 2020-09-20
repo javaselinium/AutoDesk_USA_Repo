@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
+      <class name="example.ExecuteNonSelectQuery">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteNonSelectQuery -->
       <class name="com.autodestcrm.objectrepositorylib.Campaign">
         <methods>
           <include name="sysoTest"/>
         </methods>
       </class> <!-- com.autodestcrm.objectrepositorylib.Campaign -->
+      <class name="example.ExecuteSelectQuery">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteSelectQuery -->
+      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+        <methods>
+          <include name="createORgWithTypeTest"/>
+          <include name="configAm"/>
+          <include name="configBM"/>
+          <include name="createOrgTest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
+      <class name="example.ExecuteSelectQueryVerifyData">
+        <methods>
+          <include name="createConatct"/>
+        </methods>
+      </class> <!-- example.ExecuteSelectQueryVerifyData -->
+      <class name="com.autdeskcrm.conatcttest.CreateContacWithOrgNameTest">
+        <methods>
+          <include name="createContactWithOrgtest"/>
+        </methods>
+      </class> <!-- com.autdeskcrm.conatcttest.CreateContacWithOrgNameTest -->
+      <class name="example.ScreenShotTest">
+        <methods>
+          <include name="createContactTest"/>
+        </methods>
+      </class> <!-- example.ScreenShotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
